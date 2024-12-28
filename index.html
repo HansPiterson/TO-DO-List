@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<!-- Copyright @HadiSanjaya -->
+<body>
+    <div class="display">
+        <button class="back-button" onclick="beranda()"><i class="fa-solid fa-chevron-left"></i></button>
+        <h1>Create New task</h1>
+    </div>
+    <div class="todo-app">
+        <p>Work</p>
+        <button id="add-todo"><i class="fa-solid fa-pen-to-square"></i></button>
+        <ul id="todo-list">
+            <!-- Contoh Item -->
+            <li class="todo-item">
+                <span class="todo-text">Example To-Do</span>
+                <div class="actions">
+                    <i class="fa-regular fa-square-check"></i>
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-trash"></i>
+                </div>
+            </li>
+        </ul>
+    
+        <!-- Modal -->
+        <div id="todo-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-modal"><i class="fa-solid fa-chevron-up"></i></span>
+                <p>What on your mind?</p>
+                <input type="text" id="todo-input" placeholder="Submit your task" />
+                <label for="deadline"><h2>Add Deadline?</h2></label>
+                <input type="datetime-local" id="todo-deadline" placeholder="Add Date" />
+                <button id="save-todo">Add</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="create-task">
+        <button class="task-button"><p>Create Task</p></button>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
